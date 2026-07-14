@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buraco Negro</title>
+    <link rel="icon" href="IMAGEM/logotipo.webp" type="image/webp">
+    <link rel="stylesheet" href="css/ESTILO.CSS">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<div class="leitura-container">
+    <button id="btn-ler" onclick="alternarLeitura()"><i class="fas fa-volume-up"></i> Ouvir Página</button>
+    <select id="seletor-voz" onchange="pararLeitura()">
+        <option value="feminina">Voz Feminina</option>
+        <option value="masculina">Voz Masculina</option>
+    </select>
+</div>
+<body>
+
+    <header class="header">
+        <div class="logo">
+            <img src="IMAGEM/logotipo.webp" alt="Logo">
+        </div>
+        <h1 class="titulo-central">Buraco Negro</h1>
+        <div class="menu-hamburger" onclick="toggleMenu()">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+        </div>
+        <nav class="nav-menu" id="navMenu">
+            <a href="#">Home</a>
+            <a href="#">Galeria</a>
+            <a href="#">Sobre</a>
+            <a href="#">Contato</a>
+        </nav>
+    </header>
+
+    <div class="tema-container">
+        <button id="btn-claro" onclick="mudarTema('claro')">
+            <i class="fas fa-sun"></i> Claro
+        </button>
+        <button id="btn-escuro" onclick="mudarTema('escuro')">
+            <i class="fas fa-moon"></i> Escuro
+        </button>
+    </div>
+
+    <section class="slider-container">
+        <div class="slider">
+            <div class="slide active"><img src="IMAGEM/imagem1.png" alt="Buraco Negro 1"></div>
+            <div class="slide"><img src="IMAGEM/imagem2.webp" alt="Buraco Negro 2"></div>
+            <div class="slide"><img src="IMAGEM/imagem3.webp" alt="Buraco Negro 3"></div>
+            <div class="slide"><img src="IMAGEM/imagem4.jpeg" alt="Buraco Negro 4"></div>
+            <div class="slide"><img src="IMAGEM/imagem5.jpg" alt="Buraco Negro 5"></div>
+            <div class="slide"><img src="IMAGEM/imagem6.webp" alt="Buraco Negro 6"></div>
+            <div class="slide"><img src="IMAGEM/imagem7.jpg" alt="Buraco Negro 7"></div>
+            <div class="slide"><img src="IMAGEM/imagem8.webp" alt="Buraco Negro 8"></div>
+        </div>
+        <button class="prev-btn" onclick="mudarSlide(-1)">&#10094;</button>
+        <button class="next-btn" onclick="mudarSlide(1)">&#10095;</button>
+    </section>
+
+    <section class="cards-container">
+        <div class="card">
+            <img src="IMAGEM/imagem1.png" alt="Card 1">
+            <div class="card-info">
+                <h3>Singularidade</h3>
+                <p>O ponto de densidade infinita no centro.</p>
+            </div>
+        </div>
+        <div class="card">
+            <img src="IMAGEM/imagem2.webp" alt="Card 2">
+            <div class="card-info">
+                <h3>Horizonte de Eventos</h3>
+                <p>A fronteira de onde nada pode escapar.</p>
+            </div>
+        </div>
+        <div class="card">
+            <img src="IMAGEM/imagem3.webp" alt="Card 3">
+            <div class="card-info">
+                <h3>Disco de Acreção</h3>
+                <p>Matéria superaquecida orbitando o vazio.</p>
+            </div>
+        </div>
+        <div class="card">
+            <img src="IMAGEM/imagem4.jpeg" alt="Card 4">
+            <div class="card-info">
+                <h3>Efeito de Lente</h3>
+                <p>A distorção da luz ao redor da gravidade.</p>
+            </div>
+        </div>
+        <div class="card">
+            <img src="IMAGEM/imagem5.jpg" alt="Card 5">
+            <div class="card-info">
+                <h3>Buraco Negro Estelar</h3>
+                <p>Formado pelo colapso de uma grande estrela.</p>
+            </div>
+        </div>
+        <div class="card">
+            <img src="IMAGEM/imagem6.webp" alt="Card 6">
+            <div class="card-info">
+                <h3>Supermassivos</h3>
+                <p>Monstros que habitam o centro das galáxias.</p>
+            </div>
+        </div>
+        <div class="card">
+            <img src="IMAGEM/imagem7.jpg" alt="Card 7">
+            <div class="card-info">
+                <h3>Espaço-Tempo</h3>
+                <p>A deformação extrema do tecido do universo.</p>
+            </div>
+        </div>
+        <div class="card">
+            <img src="IMAGEM/imagem8.webp" alt="Card 8">
+            <div class="card-info">
+                <h3>Radiação Hawking</h3>
+                <p>A teoria da evaporação dos buracos negros.</p>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="redes-sociais">
+            <a href="#" class="icon instagram"><i class="fab fa-instagram"></i></a>
+            <a href="#" class="icon facebook"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" class="icon tiktok"><i class="fab fa-tiktok"></i></a>
+        </div>
+        <p class="direitos">&copy; 2026 Buraco Negro. Todos os direitos reservados.</p>
+    </footer>
+
+    <a href="https://wa.me/seu-numero-aqui" class="whatsapp-btn" target="_blank">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <div vw class="enabled">
+        <div vw-access-button class="active"></div>
+        <div vw-plugin-wrapper>
+            <div class="vw-plugin-top-wrapper"></div>
+        </div>
+    </div>
+    <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+    <script>
+        new window.VLibras.Widget('https://vlibras.gov.br/app');
+    </script>
+
+    <script src="JS/SCRIPT.JS"></script>
+</body>
+</html>
